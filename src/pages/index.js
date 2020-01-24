@@ -4,9 +4,10 @@ import Styles from './index.module.scss';
 import { Layout } from '../components/Layout';
 import { Title } from '../components/Title';
 
-export default () => {
+export default ({data}) => {
     return (
         <Layout>
+            {data.site.siteMetadata.index}
             <Title>Hi there, this is the Home page ;)</Title>
             <div className={Styles.content}>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At erat pellentesque adipiscing commodo elit at imperdiet. At urna condimentum mattis pellentesque id nibh tortor id. Ullamcorper morbi tincidunt ornare massa eget. Pharetra convallis posuere morbi leo urna molestie at. Leo duis ut diam quam nulla porttitor massa id neque. Suspendisse ultrices gravida dictum fusce ut. Quis vel eros donec ac odio tempor orci. Nulla malesuada pellentesque elit eget gravida cum sociis natoque. Auctor elit sed vulputate mi sit amet. Habitant morbi tristique senectus et netus et malesuada fames ac. Id consectetur purus ut faucibus pulvinar elementum integer enim. Augue interdum velit euismod in pellentesque massa placerat duis. Fermentum leo vel orci porta non pulvinar. Odio tempor orci dapibus ultrices in iaculis. Morbi quis commodo odio aenean sed adipiscing diam donec. Et tortor consequat id porta nibh venenatis cras sed. Pellentesque diam volutpat commodo sed egestas egestas.
@@ -16,3 +17,12 @@ export default () => {
         </Layout>
     )
 }
+
+export const query = graphql `query {
+    site {
+        siteMetadata {
+            index
+        }
+    }
+}`;
+

@@ -1,9 +1,16 @@
 module.exports = {
     plugins: [
-        'gatsby-plugin-sass'
+        'gatsby-plugin-sass',
+        {
+            resolve: 'gatsby-source-filesystem',
+            options: {
+                name: 'files',
+                path: `${__dirname}/src/markdown`
+            }
+        },
+        'gatsby-transformer-remark'
     ],
     siteMetadata: {
-        index: "This is page query",
-        header: "This is static query"
+        header: "Gatsby Example"
     }
 }

@@ -1,1 +1,3 @@
-# Gatsbyjs example
+# GatsbyJS example
+
+![DEMO](demo.gif)

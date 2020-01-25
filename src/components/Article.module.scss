@@ -1,9 +1,13 @@
 .article {
     display: flex;
     flex-direction: row;
-    border-bottom: 1px solid black;
     padding: 10px;
     margin-bottom: 10px;
+    transition: all 0.25s ease;
+
+    &:hover {
+        box-shadow: inset 900px 0 0 0 #eee;
+    }
 
     .thumbnail {
         height: 150px;

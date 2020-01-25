@@ -13,6 +13,9 @@ export function ArticleList(props) {
                         totalCount
                         edges {
                             node {
+                                fields {
+                                    slug
+                                }
                                 id
                                 frontmatter {
                                     title

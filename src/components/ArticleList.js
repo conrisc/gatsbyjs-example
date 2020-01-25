@@ -18,6 +18,7 @@ export function ArticleList(props) {
                                     title
                                     image
                                     date(formatString: "MMMM YYYY")
+                                    keywords
                                 }
                                 excerpt
                             }

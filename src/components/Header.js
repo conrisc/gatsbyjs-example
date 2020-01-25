@@ -18,7 +18,9 @@ export function Header() {
 
             render = { data => (
                 <div className={Styles.content}>
-                    <h1 className={Styles.title}>{data.site.siteMetadata.header}</h1>
+                    <div className={Styles.title}>
+                        <h2>{data.site.siteMetadata.header}</h2>
+                    </div>
                 </div>
             )}
         />

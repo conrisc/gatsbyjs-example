@@ -6,7 +6,9 @@
     margin-bottom: 10px;
 
     .thumbnail {
-        width: 150px;
+        height: 150px;
+        background: linear-gradient(#fefefe, #efefef);
+        flex: 0 0 150px;
     }
 
     .details {
